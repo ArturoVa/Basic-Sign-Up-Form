@@ -5,25 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Sing up!</title>
+    <title>Sign up!</title>
 </head>
 <body>
     <div class="image-container">
-        <img src="cool_image.jpg">
+        <img id="cool-image" src="cool_image1.jpg" alt="Cool image" >
     </div>
     <div class="content">
-        <div class="text"></div>
+        <div class="text">This is just display, it does not actually saves information, so dont worry about it</div>
         <form>
-            <input type="text" id="content0"><label for="content0"> First Name</label>
-            <input type="text" id="content1"><label for="content1"> Last Name</label>
-            <input type="text" id="content2"><label for="content2"> Email</label>
-            <input type="text" id="content3"><label for="content3"> Phone Number</label>
-            <input type="text" id="content4"><label for="content4"> Password</label>
-            <input type="text" id="content5"><label for="content5"> Confirm Password</label>
-            <button type="submit"> Create account</button>
+            <div class="section">
+                <div class="input-holder">
+                    <label for="content1" class="label-text">Name</label><input type="text" id="content1">
+                </div>
+                <div class="input-holder">
+                    <label for="content2" class="label-text">Last Name</label><input type="text" id="content2">
+                </div>
+            </div>
+            <div class="section">
+                <div class="input-holder">
+                    <label for="content3" class="label-text">Email</label><input type="email" id="content3">
+                </div>
+                <div class="input-holder">
+                    <label for="content4" class="label-text">Phone</label><input type="tel" id="content4" maxlength="10" />
+                </div>
+            </div>
+            <div class="section">
+                <div class="input-holder">
+                    <label for="content5" class="label-text">Password</label><input type="password" id="content5">
+                </div>
+                <div class="input-holder">
+                    <label for="content6" class="label-text">Confirm Password</label><input type="password" id="content6">
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
         </form>
 
-        <div>Already have an account? click <a href="#">here to log in!</a></div>
     </div>
 </body>
 </html>
