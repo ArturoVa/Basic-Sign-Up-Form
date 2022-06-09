@@ -25,7 +25,7 @@ body{
 
     font-size: var(--fontsize);
 
-    background: border-box  black;
+    background: border-box  linear-gradient(137deg, rgba(0,0,0,1) 0%, rgba(8,46,65,1) 56%, rgba(25,120,0,1) 100%);
 
 }
 .image-container{
@@ -35,7 +35,7 @@ body{
 img#cool-image{
     display: flex;
     flex-grow: 1;
-    border-right: 10px solid white;
+    border-right: 10px solid rgb(6, 30, 1);
     max-width: auto;
     max-height: 100vh;
     object-fit: fill;
@@ -109,14 +109,18 @@ button#submit:hover{
 }
 
 .content{
-    background: rgb(105, 27, 27);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    height: 100vh;
     font-size: 2em;
-    background: linear-gradient(137deg, rgba(0,0,0,1) 0%, rgba(8,46,65,1) 56%, rgba(25,120,0,1) 100%);
+    background: rgb(100, 100, 100);
+    border-radius: 10px;
+}
+
+#log-in{
+    font-size: 0.5em;
+    align-self: left;
 }
