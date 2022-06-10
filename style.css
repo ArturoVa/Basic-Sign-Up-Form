@@ -6,6 +6,8 @@ content3 = phone number
 content4 = password 
 content5 = confirm password  */
 
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 
 :root{
     --fontsize:20px;
@@ -19,36 +21,60 @@ body{
     width: 100vw;
     height: 100vh;
     max-width: 100vw;
-    max-height: 100vh;
+    max-height: 100vh;  
     margin: 0%;
     padding: 0%;
 
+    font-family: sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
     font-size: var(--fontsize);
 
     background: border-box #59a31049;
 
 }
+/*image (left side)*/
 .image-container{
     max-height: 100%;
     background: white;
     position: relative;
 }
-#icon{
+#icon-container{
     position:absolute;
     top: 20%;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
     color: #59a310;
+    background-color: rgba(140, 140, 140, 0.678);
+    height: 275px;
+    font-size: 4em;
 }
+#icon-text{
+    font-family: 'Patua One', cursive;
+    -webkit-text-stroke: 2px white;
+}
+#icon{
+    height: 150px;
+}
+
+.mentions{
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    color: white;
+}
+/*Background image*/
 img#cool-image{
     display: flex;
     flex-grow: 1;
-    border-right: 10px solid #59a310;
     max-width: auto;
     max-height: 100vh;
     object-fit: fill;
     
 }
+
+
 /*Form*/
 form{
     padding: 50px;
@@ -68,7 +94,8 @@ form{
 
 }
 .text{
-    width: 80%;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .input-holder{
@@ -130,10 +157,10 @@ button#submit:hover{
     align-items: center;
     justify-content: center;
     overflow:auto;
-
+    height: 100%;
+    border-left: 10px solid #59a310;
     flex-grow: 1;
     font-size: 2em;
-    border-radius: 10px;
 
 }
 
