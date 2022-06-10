@@ -49,6 +49,7 @@ body{
     background-color: rgba(140, 140, 140, 0.678);
     height: 275px;
     font-size: 4em;
+    overflow: hidden;
 }
 #icon-text{
     font-family: 'Patua One', cursive;
@@ -62,8 +63,12 @@ body{
     position: absolute;
     top: 90%;
     left: 5%;
-    color: white;
+    color: rgba(181, 181, 181, 0.612);
 }
+a:visited{
+    color: rgba(104, 104, 104, 0.779);
+}
+
 /*Background image*/
 img#cool-image{
     display: flex;
@@ -95,7 +100,15 @@ form{
 }
 .text{
     width: 100%;
-    margin-top: 10px;
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    box-sizing: border-box;
+
 }
 
 .input-holder{
@@ -115,7 +128,7 @@ input{
     background-color: transparent;
     border: 0;
     height: 80%;
-    border-radius: 10px;
+
     font-size: 2rem;
 }
 input::-webkit-outer-spin-button,
@@ -126,6 +139,9 @@ input::-webkit-inner-spin-button {
 input:focus{
     outline: none;
 
+}
+input:invalid{
+    outline: solid rgba(255, 0, 0, 0.514);
 }
 
 label{
